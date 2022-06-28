@@ -5,3 +5,13 @@
     background-color: map-get($map, backgroundColor);
   }
 }
+
+.container-fluid{
+  @include make-container(3rem);
+}
+
+.brand-text{
+  @include themify($themes){
+    color: themed('brandColor');
+  };
+}

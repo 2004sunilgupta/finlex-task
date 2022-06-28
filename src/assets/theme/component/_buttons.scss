@@ -1,1 +1,14 @@
-
+.btn-secondary{
+  @include themify($themes) {
+    @include button-variant(themed('btnSecondaryColor'), themed('btnSecondaryColor'), $hover-background: darken(themed('btnSecondaryColor'), 7.5%), $hover-border: darken(themed('btnSecondaryColor'), 10%), $active-background: darken(themed('btnSecondaryColor'), 10%), $active-border: darken(themed('btnSecondaryColor'), 12.5%));
+    color: themed('backgroundColor');
+  }
+}
+.btn-outline-danger{
+  @include themify($themes) {
+    @include button-outline-variant(themed('btnOutlineDanger'), $color-hover: color-yiq(themed('btnOutlineDanger')), $active-background: themed('btnOutlineDanger'), $active-border: themed('btnOutlineDanger'));
+    &:hover,&:active{
+      color: themed('backgroundColor') !important;
+    }
+  }
+}
