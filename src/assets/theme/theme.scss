@@ -1,6 +1,8 @@
-@import "user-variables";
+@import "bootstrap-override";
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+@import "user-variables";
+@import "mixins";
 
 @import "component/buttons";
 @import "user-style";
