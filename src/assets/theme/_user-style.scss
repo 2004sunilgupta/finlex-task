@@ -48,8 +48,16 @@
   }
 }
 
+.font-size-xxl{
+  font-size: $font-size-xxl;
+}
+
 .font-size-lg{
   font-size: $font-size-lg;
+}
+
+.font-size-base{
+  font-size: $font-size-base;
 }
 
 .font-size-sm{
@@ -58,6 +66,10 @@
 
 .font-size-xs{
   font-size: $font-size-xs;
+}
+
+.line-height-1{
+  line-height: 1;
 }
 
 .mb-10{
@@ -131,5 +143,14 @@
     background-color: themed('tagBg');
     color: themed('tagColor');
   }
+}
+
+.product-icon{
+  width: 2.6875rem;
+  height: 2.6875rem;
+  border-radius: .125rem;
+  @include themify($themes){
+    background-color: themed('brandColor');
+  };
 }
 
