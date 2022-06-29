@@ -5,8 +5,8 @@
         <h1 class="mb-3 mb-md-0 brand-text">Lorem Ipsum dolor sit amet</h1>
       </div>
       <div class="col-md-auto">
-        <button type="button" class="btn btn-outline-danger" (click)="toggleTheme()">Switch Theme</button>
-        <button type="button" class="btn btn-secondary ml-2">Lorem Ipsum</button>
+        <button type="button" class="btn btn-outline-danger shadow-none" (click)="toggleTheme()">Switch Theme</button>
+        <button type="button" class="btn btn-secondary ml-2 shadow-none">Lorem Ipsum</button>
       </div>
     </div>
   </div>
@@ -29,7 +29,7 @@
               <li>
                 <div class="row no-gutters">
                   <div class="col-6">
-                    <div class="block-left">
+                    <div class="pr-10">
                       <p class="mb-0 text-faded font-size-xs">Lorem Ipsum</p>
                       <div class="box-with-icon position-relative border-danger">
                         <button type="button" class="btn border-0 position-absolute icon-left bg-danger h-100 d-flex align-items-center">
@@ -44,7 +44,7 @@
                       <p class="mb-0 text-faded font-size-xs">Lorem Ipsum</p>
                       <div class="d-flex align-items-center">
                         <i class="fa-solid fa-shield-halved font-size-sm mr-1 brand-text"></i>
-                        <p class="mb-0 text-faded font-size-sm text-truncate">000.000,00</p>
+                        <p class="mb-0 text-black1-secondary font-size-sm text-truncate">Lorem Ipsum</p>
                       </div>
                     </div>
                   </div>
@@ -53,7 +53,7 @@
               <li>
                 <div class="row no-gutters">
                   <div class="col-6">
-                    <div class="block-left">
+                    <div class="pr-10">
                       <p class="mb-0 text-faded font-size-xs">Lorem Ipsum</p>
                       <div class="d-flex align-items-center">
                         <i class="fa-solid fa-money-bill-wave font-size-sm mr-1 brand-text"></i>
@@ -84,6 +84,48 @@
                   <button type="button" class="btn btn-edit p-0 border-0 position-absolute icon-right">
                     <i class="fa-solid fa-pencil"></i>
                   </button>
+                </div>
+              </li>
+              <li>
+                <div class="custom-accordion">
+                  <ngb-accordion #a="ngbAccordion" activeIds="custom-panel-2">
+                    <ngb-panel id="custom-panel-1">
+                      <ng-template ngbPanelHeader let-opened="opened">
+                        <div class="has-icon-right position-relative d-flex align-items-center" role="button" (click)="a.toggle('custom-panel-1')">
+                          <span class="counter font-size-sm text-center text-warning bg-warning-light">8</span>
+                          <h3 class="mb-0 font-size-sm ml-10 text-truncate">Lorem Ipsum</h3>
+                          <i class="fa-solid icon-right font-size-xs text-faded position-absolute {{opened ? 'fa-chevron-up' : 'fa-chevron-down'}}"></i>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbPanelContent>
+                        <span class="font-size-xs tag rounded-sm">Lorem Ipsum</span>
+                      </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="custom-panel-2">
+                      <ng-template ngbPanelHeader let-opened="opened">
+                        <div class="has-icon-right position-relative d-flex align-items-center" role="button" (click)="a.toggle('custom-panel-2')">
+                          <span class="counter font-size-sm text-center text-danger bg-danger-light">2</span>
+                          <h3 class="mb-0 font-size-sm ml-10 text-truncate">Lorem Ipsum</h3>
+                          <i class="fa-solid icon-right font-size-xs text-faded position-absolute {{opened ? 'fa-chevron-up' : 'fa-chevron-down'}}"></i>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbPanelContent>
+                        <span class="font-size-xs tag rounded-sm">Lorem Ipsum</span>
+                      </ng-template>
+                    </ngb-panel>
+                    <ngb-panel id="custom-panel-3">
+                      <ng-template ngbPanelHeader let-opened="opened">
+                        <div class="has-icon-right position-relative d-flex align-items-center" role="button" (click)="a.toggle('custom-panel-3')">
+                          <span class="counter font-size-sm text-center text-success bg-success-light">0</span>
+                          <h3 class="mb-0 font-size-sm ml-10 text-truncate">Lorem Ipsum</h3>
+                          <i class="fa-solid icon-right font-size-xs text-faded position-absolute {{opened ? 'fa-chevron-up' : 'fa-chevron-down'}}"></i>
+                        </div>
+                      </ng-template>
+                      <ng-template ngbPanelContent>
+                        <span class="font-size-xs tag rounded-sm">Lorem Ipsum</span>
+                      </ng-template>
+                    </ngb-panel>
+                  </ngb-accordion>
                 </div>
               </li>
             </ul>

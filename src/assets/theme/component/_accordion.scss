@@ -1,0 +1,22 @@
+.custom-accordion{
+  .card{
+    border: none;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  .card-header{
+    background-color: $transparent;
+    border-bottom: none;
+    padding: 0;
+  }
+  .card-body{
+    padding: .625rem 0 0 2.75rem;
+  }
+  .has-icon-right{
+    .icon-right{
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}

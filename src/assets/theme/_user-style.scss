@@ -16,6 +16,18 @@
   };
 }
 
+.text-black1{
+  @include themify($themes){
+    color: themed('black1Color');
+  };
+}
+
+.text-black1-secondary{
+  @include themify($themes){
+    color: themed('black1SecondaryColor');
+  };
+}
+
 .text-faded{
   @include themify($themes){
     color: themed('textMuted');
@@ -52,7 +64,11 @@
   margin-bottom: .625rem;
 }
 
-.block-left{
+.ml-10{
+  margin-left: .625rem;
+}
+
+.pr-10{
   padding-right: .625rem;
 }
 
@@ -81,13 +97,39 @@
 .box-with-icon{
   border-radius: 0.1875rem;
   padding: 0 .5rem 0 1.5rem;
-  @include themify($themes) {
-    border: .0625rem solid;
-    min-height: 1.25rem;
-  }
+  border: .0625rem solid;
+  min-height: 1.25rem;
   .icon-left{
     padding: .125rem .25rem;
     left: 0;
     top: 0;
   }
 }
+
+.counter{
+  min-width: 2.125rem;
+  height: 1.625rem;
+  font-weight: $font-weight-medium;
+  padding: .125rem;
+}
+
+.bg-success-light{
+  background-color: rgba($green-1, .05);
+}
+
+.bg-warning-light{
+  background-color: rgba($yellow-2, .05);
+}
+
+.bg-danger-light{
+  background-color: rgba($yellow-1, .05);
+}
+
+.tag{
+  padding: .125rem .25rem;
+  @include themify($themes) {
+    background-color: themed('tagBg');
+    color: themed('tagColor');
+  }
+}
+
