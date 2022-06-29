@@ -4,11 +4,22 @@
     color: themed('backgroundColor');
   }
 }
+
 .btn-outline-danger{
   @include themify($themes) {
     @include button-outline-variant(themed('btnOutlineDanger'), $color-hover: color-yiq(themed('btnOutlineDanger')), $active-background: themed('btnOutlineDanger'), $active-border: themed('btnOutlineDanger'));
     &:hover,&:active{
-      color: themed('backgroundColor') !important;
+      color: themed('backgroundColor');
     }
   }
+}
+
+.btn-edit{
+  font-size: $font-size-xs;
+  @include themify($themes){
+    color: themed('btnEditColor');
+    @include hover() {
+      color: darken(themed('btnEditColor'), 7.5%);
+    }
+  };
 }

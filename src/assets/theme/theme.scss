@@ -1,8 +1,14 @@
+//overriding bootstrap variables
 @import "bootstrap-override";
+
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
 @import "user-variables";
 @import "mixins";
 
+//user defined component styles
 @import "component/buttons";
+@import "component/card";
+
+//user defined global styles
 @import "user-style";

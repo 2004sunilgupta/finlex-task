@@ -15,3 +15,79 @@
     color: themed('brandColor');
   };
 }
+
+.text-faded{
+  @include themify($themes){
+    color: themed('textMuted');
+  };
+}
+
+.text-theme-opposite{
+  @include themify($themes){
+    color: themed('textOppsoite');
+  };
+}
+
+.has-icon-right{
+  padding-right: 1.5rem;
+  .icon-right{
+    top: 0;
+    right: 0;
+  }
+}
+
+.font-size-lg{
+  font-size: $font-size-lg;
+}
+
+.font-size-sm{
+  font-size: $font-size-sm;
+}
+
+.font-size-xs{
+  font-size: $font-size-xs;
+}
+
+.mb-10{
+  margin-bottom: .625rem;
+}
+
+.block-left{
+  padding-right: .625rem;
+}
+
+.block-right{
+  padding-left: .625rem;
+  @include themify($themes) {
+    border-left: .0625rem solid themed('borderColor');
+  }
+}
+
+.card-list{
+  &.list-group{
+    list-style: none;
+    li{
+      padding: .625rem 0;
+      @include themify($themes) {
+        border-bottom: .0625rem solid themed('borderColor');
+      }
+      &:first-child{
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+.box-with-icon{
+  border-radius: 0.1875rem;
+  padding: 0 .5rem 0 1.5rem;
+  @include themify($themes) {
+    border: .0625rem solid;
+    min-height: 1.25rem;
+  }
+  .icon-left{
+    padding: .125rem .25rem;
+    left: 0;
+    top: 0;
+  }
+}

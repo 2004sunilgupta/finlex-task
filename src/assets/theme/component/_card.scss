@@ -1,0 +1,7 @@
+.card{
+  @include themify($themes) {
+    background-color: themed('cardBgColor');
+    border-color: themed('borderColor');
+  }
+  margin-bottom: .625rem;
+}
