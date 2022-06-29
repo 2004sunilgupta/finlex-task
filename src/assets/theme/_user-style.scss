@@ -6,6 +6,10 @@
   }
 }
 
+.top-bar{
+  padding: 1.25rem 0;
+}
+
 .container-fluid{
   @include make-container(3rem);
 }

@@ -1,6 +1,5 @@
 //user defined color variables
 $brand-1: #022F37 !default;
-$brand-2: #0D2A33 !default; //not used
 
 $accent-1: #FD6F52 !default;
 $accent-2: #EE7859 !default;
@@ -16,21 +15,10 @@ $gray-3: #E7E7E7 !default;
 $gray-4: #F8F8F8 !default;
 $gray-5: #DCDADA !default;
 
-$info-1: #BEDEDE !default; //not used
-$info-2: #C3DDDD !default;
-
-$red-1: #DF7457 !default; //not used
-$red-2: #E49D87 !default; //not used
-$red-3: #E9CDBD !default; //not used
-$red-4: #EBE9DF !default; //not used
+$info-1: #C3DDDD !default;
 
 $yellow-1: #EA9920 !default;
 $yellow-2: #E2D23E !default;
-
-$brown-1: #490B07 !default; //not used
-$brown-2: #A3867E !default; //not used
-$brown-3: #D4C9BF !default; //not used
-$brown-4: #ECEAE0 !default; //not used
 
 $green-1: #1EAF61 !default;
 $green-2: #395C61 !default;
@@ -63,7 +51,7 @@ $btn-td-secondary: $gray-3;
 $brand-td-color: $accent-2;
 $border-td-color: $gray-1;
 $card-bg-td-color: $black-2;
-$btn-td-edit: $info-2;
+$btn-td-edit: $info-1;
 $text-td-muted: $gray-3;
 $text-td-opposite: $black-1;
 $black1-td-color: $white;
